@@ -1,6 +1,6 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "hodlers-kit-airdrop",
+  "description": "Hodlers Kit - Airdrop, a toolkit to simplify and streamline airdrop operations",
   "private": true,
   "version": "0.0.0",
   "type": "module",
