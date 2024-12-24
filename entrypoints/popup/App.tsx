@@ -1,34 +1,32 @@
-import { useState } from "react";
-import reactLogo from "@/assets/react.svg";
-import wxtLogo from "/wxt.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://wxt.dev" target="_blank">
-          <img src={wxtLogo} className="logo" alt="WXT logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="text-3xl font-bold underline">WXT + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div className="flex flex-col items-center justify-center h-full w-full">
+      <header className="h-[60px] w-full flex flex-col items-center justify-center">
+        <h1 className="text-xl font-bold ">Hodlers Kit - Airdrop</h1>
+        <p className="text-sm text-gray-500">
+          a toolkit to simplify and streamline airdrops
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the WXT and React logos to learn more
-      </p>
-    </>
+      </header>
+
+      <main className="flex-grow flex flex-col items-center justify-center w-full">
+        <form className="flex flex-col items-center justify-center h-full w-full gap-4">
+          <input
+            type="text"
+            placeholder="Enter your X post's url to get started"
+            className="w-full p-2 border border-gray-300 rounded-md"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+
+      <footer className="h-[60px] w-full flex items-center justify-center">
+        <a href="https://hodlerskit.com" target="_blank">
+          Learn more about Hodlers Kit
+        </a>
+      </footer>
+    </div>
   );
 }
 
