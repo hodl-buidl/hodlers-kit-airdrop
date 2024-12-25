@@ -1,3 +1,3 @@
-# WXT + React
+# X Copilot
 
-This template should help get you started developing with React in WXT.
+A chrome extension to simplify and streamline marketing on X

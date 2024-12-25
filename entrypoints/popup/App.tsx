@@ -4,9 +4,9 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-center h-full w-full">
       <header className="h-[60px] w-full flex flex-col items-center justify-center">
-        <h1 className="text-xl font-bold ">Hodlers Kit - Airdrop</h1>
+        <h1 className="text-xl font-bold ">X Copilot</h1>
         <p className="text-sm text-gray-500">
-          a toolkit to simplify and streamline airdrops
+          A chrome extension to simplify and streamline marketing on X
         </p>
       </header>
 
@@ -23,7 +23,7 @@ function App() {
 
       <footer className="h-[60px] w-full flex items-center justify-center">
         <a href="https://hodlerskit.com" target="_blank">
-          Learn more about Hodlers Kit
+          Learn more about X Copilot
         </a>
       </footer>
     </div>
