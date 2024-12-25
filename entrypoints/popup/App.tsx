@@ -1,32 +1,21 @@
+import { Link } from "react-router-dom";
 import "./App.css";
+import { Layout } from "@/components/Layout";
+import airdropImage from "@/assets/images/airdrop.webp";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full">
-      <header className="h-[60px] w-full flex flex-col items-center justify-center">
-        <h1 className="text-xl font-bold ">X Copilot</h1>
-        <p className="text-sm text-gray-500">
-          A chrome extension to simplify and streamline marketing on X
-        </p>
-      </header>
-
-      <main className="flex-grow flex flex-col items-center justify-center w-full">
-        <form className="flex flex-col items-center justify-center h-full w-full gap-4">
-          <input
-            type="text"
-            placeholder="Enter your X post's url to get started"
-            className="w-full p-2 border border-gray-300 rounded-md"
-          />
-          <button type="submit">Submit</button>
-        </form>
+    <Layout>
+      <main className="w-full grid grid-cols-3 grid-rows-4 gap-2">
+        <Link
+          className="flex flex-col items-center justify-between p-2 rounded-lg shadow-lg bg-sky-200"
+          to="/airdrop"
+        >
+          <img src={airdropImage} alt="Airdrop" className="w-10 h-10" />
+          <h2 className="text-base font-bold">Airdrop</h2>
+        </Link>
       </main>
-
-      <footer className="h-[60px] w-full flex items-center justify-center">
-        <a href="https://hodlerskit.com" target="_blank">
-          Learn more about X Copilot
-        </a>
-      </footer>
-    </div>
+    </Layout>
   );
 }
 
